@@ -39,7 +39,7 @@ class Short
        $logger = new Logger(Config::$logName);
        Config::setLongUrl($url);
        try {
-           $driver = new RequestDriver(Config::getOprions);
+           $driver = new RequestDriver(Config::getOptions());
            $shortener = new Shortener($url);
            return $shortener->execute($driver);
        } catch (ShortenerException $e) {
