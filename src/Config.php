@@ -44,7 +44,7 @@ namespace Monster3D\Shortener;
      * 
      */
      
-     public static $apiKey = 'AIzaSyCNooKs5O7euRR1UyX4-S6op0RAa42BQAI';
+     public static $apiKey = 'GOOGLE-API-KEY';
      /**
      * File log name
      *
@@ -64,7 +64,7 @@ namespace Monster3D\Shortener;
      public static function getOptions()
      {          
          return [
-                    CURLOPT_URL => self::$url . 'rlshortener/v1/url?key=' . self::$apiKey,
+                    CURLOPT_URL => self::$url . 'urlshortener/v1/url?key=' . self::$apiKey,
                     CURLOPT_RETURNTRANSFER => true,
                     CURLOPT_SSL_VERIFYPEER => false,
                     CURLOPT_HEADER         => false,
