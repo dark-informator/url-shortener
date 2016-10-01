@@ -60,7 +60,7 @@ class RequestDriver implements DriverInterface
     * @throw Monster3D\Shortener\Exceptions\DriverException
     *
     */
-    private function init($setting)
+    public function init($setting)
     {
         if (!function_exists('curl_init')) {
             throw new DriverException('Ext. curl not instaled');
@@ -96,6 +96,6 @@ class RequestDriver implements DriverInterface
             throw new DriverException('Curl exec error: ' . "\r\n" . 
                 'Code: ' . curl_errno($this->driver) . "\n\r" . 'Message: ' . curl_error($this->driver));
         }
-        return json_decode($result, true);
+        return json_decode($result);
     }
 }
