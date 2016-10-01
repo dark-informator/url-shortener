@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Monster3D\Shortener;
+namespace Monster3D\Shortener\Interfaces;
 
 /**
  * @package         DriverInterface
@@ -25,7 +25,7 @@ namespace Monster3D\Shortener;
      *
      */
 
-     function init();
+     function init($setting);
      /**
      * Get current inited driver
      *
