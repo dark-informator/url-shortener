@@ -1,5 +1,5 @@
 {
-    "name": "Monster3D/php-url-shortener",
+    "name": "monster3d/php-url-shortener",
     "type": "library",
     "description": "PHP url shortener",
     "keywords": ["url", "php", "shortener"],
