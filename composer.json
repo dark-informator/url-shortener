@@ -1,0 +1,37 @@
+{
+    "name": "Monster3D/php-url-shortener",
+    "type": "library",
+    "description": "PHP url shortener",
+    "keywords": ["url", "php", "shortener"],
+    "license": "MIT",
+    "homepage": "https://github.com/Monster3D/php-url-shortener",
+    "support": {
+        "issues": "https://github.com/Monster3D/php-url-shortener/issues",
+        "source": "https://github.com/Monster3D/php-url-shortener"
+    },
+    "authors": [
+        {
+            "name": "Nikolay Baev aka Monster3D",
+            "email": "gametester3d@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "ext-curl": "*",
+        "monolog/monolog": "^1.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "Monster3D\\Shortener\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Monster3D\\Shortener\\Tests\\Unit\\": "tests/unit"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8"
+    }
+}
