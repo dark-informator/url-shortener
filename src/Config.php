@@ -44,7 +44,7 @@ namespace Monster3D\Shortener;
      * 
      */
      
-     public static $apiKey = 'GOOGLE-API-KEY';
+     public static $apiKey;
      /**
      * File log name
      *
@@ -83,5 +83,16 @@ namespace Monster3D\Shortener;
      public static function setLongUrl($longUrl)
      {
          self::$longUrl = $longUrl;
+     }
+
+     /**
+     * Set Google API KEY
+     *
+     * @param string
+     *
+     */
+     public static function setApiKey($key)
+     {
+         self::$apiKey = $key;
      }
  } 
