@@ -3,21 +3,25 @@
 This library for simple to take short url.
 Usind Google Shortener API. 
 #### Install this package with Composer
-@todo add package to Composer after beta testing
-#### How to use:
-Edit file Config.php, add your GOOGLE-API-KEY
-```php
-<?php
-     public static $apiKey = 'GOOGLE-API-KEY';
+Require this package with Composer.
+```js
+composer require monster3d/php-url-shortener
 ```
-After:
-
+Or add your dependencies to composer.json file
+```js
+"require": {
+    "monster3d/php-url-shortener": "*"
+    }
+```
+#### How to use:
 ```php
 <?php
 //include composer
 require __DIR__ . '/vendor/autoload.php';
 use Monster3D\Shortener\Short;
 
+//Set google api key
+Short::setGoogleAPIKey('YOUR-GOOGLE-API-KEY');
 $result = Short::link('http://mylongurl.ru/');
 print_r($result);
 ```
