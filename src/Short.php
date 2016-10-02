@@ -31,6 +31,8 @@ class Short
     /**
     * Wrapper shortener url
     * 
+    * @param string
+    *
     * @return \stdClass
     *
     */
@@ -47,7 +49,17 @@ class Short
        } catch (DriverException $e) {
            $logger->log('ERROR', $e->getMessage());
        }
-
+   }
+   
+   /**
+   * Set Google API Key
+   *
+   * @param string
+   *
+   */
+   public static function setGoogleAPIKey($key)
+   {
+       Config::setApiKey($key);
    }
 
 }
